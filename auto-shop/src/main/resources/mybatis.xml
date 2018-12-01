@@ -14,25 +14,26 @@
             <property name="suppressAllComments" value="true" />
         </commentGenerator>
 
-        <jdbcConnection userId="findjob" password="125512" driverClass="com.mysql.jdbc.Driver" connectionURL="jdbc:mysql://111.230.251.119:3306/findjob"/>
+        <jdbcConnection userId="root" password="125512" driverClass="com.mysql.jdbc.Driver" connectionURL="jdbc:mysql://localhost:3306/autoshop"/>
         <javaTypeResolver>
             <property name="forceBigDecimals" value="false"/>
         </javaTypeResolver>
 
-        <javaModelGenerator targetPackage="xyz.huanxicloud.findjob.pojo" targetProject=".">
+        <javaModelGenerator targetPackage="xyz.huanxicloud.autoshop.dao.pojo" targetProject=".">
             <property name="enableSubPackages" value="false"/>
             <property name="trimStrings" value="true"/>
         </javaModelGenerator>
 
-        <sqlMapGenerator targetPackage="xyz.huanxicloud.findjob.mapping" targetProject=".">
+        <sqlMapGenerator targetPackage="xyz.huanxicloud.autoshop.dao.mapping" targetProject=".">
             <property name="enableSubPackages" value="false"/>
         </sqlMapGenerator>
 
-        <javaClientGenerator targetPackage="xyz.huanxicloud.findjob.mapper" type="XMLMAPPER" targetProject=".">
+        <javaClientGenerator targetPackage="xyz.huanxicloud.autoshop.dao.mapper" type="XMLMAPPER" targetProject=".">
             <property name="enableSubPackages" value="false"/>
         </javaClientGenerator>
 
-        <table schema="" tableName="p_order"/>
+        <!--<table schema="" tableName="device"/>-->
+        <table schema="" tableName="good"/>
         <!--<table schema="" tableName="vender"/>-->
         <!--<table schema="" tableName="operate_log"/>-->
    <!--     <table schema="" tableName="bill" ></table>

@@ -1,4 +1,4 @@
-package xyz.haunxicloud.autoshop;
+package xyz.huanxicloud.autoshop;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

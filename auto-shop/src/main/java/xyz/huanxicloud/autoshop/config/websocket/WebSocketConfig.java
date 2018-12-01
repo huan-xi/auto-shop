@@ -1,4 +1,4 @@
-package xyz.haunxicloud.autoshop.config.websocket;
+package xyz.huanxicloud.autoshop.config.websocket;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

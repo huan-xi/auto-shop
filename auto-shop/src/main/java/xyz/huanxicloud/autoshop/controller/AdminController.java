@@ -1,4 +1,4 @@
-package xyz.haunxicloud.autoshop.controller;
+package xyz.huanxicloud.autoshop.controller;
 
 public class AdminController {
 }

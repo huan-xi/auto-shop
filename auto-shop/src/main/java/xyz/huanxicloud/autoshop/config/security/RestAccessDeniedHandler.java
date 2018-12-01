@@ -1,4 +1,4 @@
-package xyz.haunxicloud.autoshop.config.security;
+package xyz.huanxicloud.autoshop.config.security;
 
 
 import org.springframework.security.access.AccessDeniedException;

@@ -1,10 +1,10 @@
-package xyz.haunxicloud.autoshop.common;
+package xyz.huanxicloud.autoshop.common;
 
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
 import org.springframework.security.core.userdetails.UserDetails;
-import xyz.haunxicloud.autoshop.config.security.JwtUser;
+import xyz.huanxicloud.autoshop.config.security.JwtUser;
 
 import java.io.Serializable;
 import java.util.Date;

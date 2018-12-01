@@ -1,4 +1,4 @@
-package xyz.haunxicloud.autoshop.common;
+package xyz.huanxicloud.autoshop.common;
 
 import java.io.Serializable;
 
