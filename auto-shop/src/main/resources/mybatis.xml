@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE generatorConfiguration PUBLIC
+        "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+        "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd" >
+<generatorConfiguration>
+
+    <classPathEntry location="C:\Users\huanxi\.m2\repository\mysql\mysql-connector-java\5.1.8\mysql-connector-java-5.1.8.jar"/>
+
+    <context id="context" targetRuntime="MyBatis3">
+        <commentGenerator>
+            <property name="suppressAllComments" value="false"/>
+            <property name="suppressDate" value="true"/>
+            <!-- 是否去除自动生成的注释 true：是 ： false:否 -->
+            <property name="suppressAllComments" value="true" />
+        </commentGenerator>
+
+        <jdbcConnection userId="findjob" password="125512" driverClass="com.mysql.jdbc.Driver" connectionURL="jdbc:mysql://111.230.251.119:3306/findjob"/>
+        <javaTypeResolver>
+            <property name="forceBigDecimals" value="false"/>
+        </javaTypeResolver>
+
+        <javaModelGenerator targetPackage="xyz.huanxicloud.findjob.pojo" targetProject=".">
+            <property name="enableSubPackages" value="false"/>
+            <property name="trimStrings" value="true"/>
+        </javaModelGenerator>
+
+        <sqlMapGenerator targetPackage="xyz.huanxicloud.findjob.mapping" targetProject=".">
+            <property name="enableSubPackages" value="false"/>
+        </sqlMapGenerator>
+
+        <javaClientGenerator targetPackage="xyz.huanxicloud.findjob.mapper" type="XMLMAPPER" targetProject=".">
+            <property name="enableSubPackages" value="false"/>
+        </javaClientGenerator>
+
+        <table schema="" tableName="p_order"/>
+        <!--<table schema="" tableName="vender"/>-->
+        <!--<table schema="" tableName="operate_log"/>-->
+   <!--     <table schema="" tableName="bill" ></table>
+        <table schema="" tableName="bill_info" ></table>-->
+       <!-- <table schema="" tableName="company">
+            <columnOverride column="com_desc" javaType="java.lang.String" jdbcType="VARCHAR"/>
+            <columnOverride column="images" javaType="java.lang.String" jdbcType="VARCHAR"/>
+        </table>-->
+        <!--<table schema="" tableName="position">
+            <columnOverride column="position_desc" javaType="java.lang.String" jdbcType="VARCHAR"/>
+        </table>-->
+       <!-- <table schema="" tableName="work_type"/>-->
+       <!--<table schema="" tableName="feedback"/>-->
+    </context>
+</generatorConfiguration>
