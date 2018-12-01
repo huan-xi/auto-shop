@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>添加分类</title>
+</head>
+<body>
+<form action="{:url('batch')}" method="post">
+    <select name="type_id">
+        {volist name="types" id="vo"}
+        <option value="{$vo.type_id}">{$vo.title}</option>
+        {/volist}
+    </select>
+    <input name="count" placeholder="创建数量" value="10">
+    <input name="count" placeholder="生成日期" value="1543650832">
+    <input type="submit" value="提交">
+</form>
+</body>
+</html>
